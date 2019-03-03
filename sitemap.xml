@@ -1,1 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>http://127.0.0.1homepage</loc><lastmod>2019-03-01T11:11:06.556-06:00</lastmod><changefreq>daily</changefreq></url><url><loc>http://127.0.0.1deals</loc><lastmod>2019-02-25T13:47:23.897-06:00</lastmod><changefreq>daily</changefreq></url><url><loc>http://127.0.0.15g/consumer</loc><lastmod>2019-02-19T10:46:05.388-05:00</lastmod><changefreq>daily</changefreq></url><url><loc>http://127.0.0.15g/thankyou</loc><lastmod>2019-02-20T16:30:40.400-05:00</lastmod><changefreq>daily</changefreq></url><url><loc>http://127.0.0.15g</loc><lastmod>2019-02-20T14:42:56.920-05:00</lastmod><changefreq>daily</changefreq></url><url><loc>http://127.0.0.15g/emailsubscription</loc><lastmod>2019-02-20T16:28:28.746-05:00</lastmod><changefreq>daily</changefreq></url></urlset>>http://127.0.0.15g/consumer/5g-evolution</loc><lastmod>2019-02-21T21:37:30.383-05:00</lastmod><changefreq>daily</changefreq></url></urlset>>http://127.0.0.1tv/game-of-thrones</loc><lastmod>2019-03-01T19:52:01.769-06:00</lastmod><changefreq>daily</changefreq></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://127.0.0.1homepage</loc>
+        <lastmod>2019-03-01T11:11:06.556-06:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://127.0.0.1deals</loc>
+        <lastmod>2019-02-25T13:47:23.897-06:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://127.0.0.15g/consumer</loc>
+        <lastmod>2019-02-19T10:46:05.388-05:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://127.0.0.15g/thankyou</loc>
+        <lastmod>2019-02-20T16:30:40.400-05:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://127.0.0.15g</loc>
+        <lastmod>2019-02-20T14:42:56.920-05:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://127.0.0.15g/emailsubscription</loc>
+        <lastmod>2019-02-20T16:28:28.746-05:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://127.0.0.15g/consumer/5g-evolution</loc>
+        <lastmod>2019-02-21T21:37:30.383-05:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://127.0.0.1tv/game-of-thrones</loc>
+        <lastmod>2019-03-01T19:52:01.769-06:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+</urlset>
