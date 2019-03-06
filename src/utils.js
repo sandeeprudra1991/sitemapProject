@@ -1,5 +1,6 @@
 import {getData} from "./api";
 import sitemap from "express-sitemap";
+import {ATT_URL as url, HTTPS as http} from "./constants";
 
 
 
@@ -14,11 +15,9 @@ export const generateSitemap= async ()=>{
             changefreq: 'daily',
         };
     })
-    console.log("map",map);
-    console.log("route",route);
     
     
-    sitemap({map,route}).XMLtoFile();
+    sitemap({http, url, map, route}).XMLtoFile();
     console.log("done");
 
 }
