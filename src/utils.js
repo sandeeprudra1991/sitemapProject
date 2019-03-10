@@ -19,7 +19,7 @@ export const generateSitemap= async ()=>{
     })
     
     
-    sitemap({http, url, map, route,}).XMLtoFile();
+    sitemap({http, url, map, route,sitemap:"sitemaps/pageInfoSitemap.xml"}).XMLtoFile();
     console.log("done");
 
 }
@@ -36,7 +36,7 @@ export const generateDirectTvSitemap= async () => {
             changefreq: 'daily',
         };
     });
-    sitemap({http, url:DIRECT_TV_URL_HOST_NAME, map, route,sitemap:"directTvSitemap.xml"}).XMLtoFile();
+    sitemap({http, url:DIRECT_TV_URL_HOST_NAME, map, route,sitemap:"sitemaps/directTvSitemap.xml"}).XMLtoFile();
     console.log(route);
     console.log("done");
     
