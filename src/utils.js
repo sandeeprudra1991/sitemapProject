@@ -11,6 +11,7 @@ export const generateSitemap= async ()=>{
     var route={};
     var map={};    
     Object.keys(data).forEach(key =>{
+        // remove last mod ?
         map[key]=[];
         route[key]={
             lastmod: data[key].versionID,
@@ -32,8 +33,6 @@ export const generateDirectTvSitemap= async () => {
     titles.forEach(title => {
         map[title.detailsLinkUrl]=[];
         route[title.detailsLinkUrl]={
-            lastmod: moment().format(),
-            changefreq: 'daily',
         };
     });
     sitemap({http, url:DIRECT_TV_URL_HOST_NAME, map, route,sitemap:"sitemaps/directTvSitemap.xml"}).XMLtoFile();
@@ -50,7 +49,7 @@ const getDitectTvTitles = async () => {
     //titles.concat(data.titles);
     titles= [...titles,...data.titles];
     const searchResultsCount= data.searchResultsCount;
-    let start=1001;
+    let start=1000;
     //let end=start+1000;
     while(searchResultsCount > start){
         let data= await getDataByURL(generateURL(start,start+1000));
@@ -63,4 +62,4 @@ const getDitectTvTitles = async () => {
     return titles;
 }
 
-const generateURL = (resultsetstart, resultsetend) => `${DIRECT_TV_URL}=${resultsetend}&resultsetstart=${resultsetstart}`;
+const generateURL = (resultsetStart, resultsetEnd) => `${DIRECT_TV_URL}=${resultsetEnd}&resultsetstart=${resultsetStart}`;
