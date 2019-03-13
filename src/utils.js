@@ -8,15 +8,29 @@ import moment from "moment";
 
 export const generateSitemap= async ()=>{
     const data= await getData();
+
     var route={};
-    var map={};    
+    var map={};   
+    console.log(data);
+     
     Object.keys(data).forEach(key =>{
-        // remove last mod ?
-        map[key]=[];
-        route[key]={
-            lastmod: data[key].versionID,
-            changefreq: 'daily',
-        };
+
+        let URLName = key;
+        if(isHomeURL(key)){
+            URLName = replceHomeURL(key);
+            console.log("check dup",URLName);
+            
+        }
+
+        if(!isDUlicateURL(key,map)){
+            map[URLName]=[];
+            route[URLName]={
+                lastmod: data[key].versionID,
+                changefreq: 'daily',
+            };
+        }
+        //console.log(map);
+        
     })
     
     
@@ -24,6 +38,12 @@ export const generateSitemap= async ()=>{
     console.log("done");
 
 }
+
+const isDUlicateURL = (url,map) => !!map[url]
+
+const isHomeURL = url => /^\/*homepage/i.test(url);
+
+const replceHomeURL = url => url.replace(/^\/*homepage/i,"");
 
 
 export const generateDirectTvSitemap= async () => {
@@ -63,3 +83,4 @@ const getDitectTvTitles = async () => {
 }
 
 const generateURL = (resultsetStart, resultsetEnd) => `${DIRECT_TV_URL}=${resultsetEnd}&resultsetstart=${resultsetStart}`;
+

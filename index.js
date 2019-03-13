@@ -1,9 +1,13 @@
 import {generateSitemap, generateDirectTvSitemap} from "./src/utils";
 
 
-// generateSitemap();
+generateSitemap();
 
 generateDirectTvSitemap();
+
+
+generateDirectTvSitemap();
+
 
 
 
