@@ -1,14 +1,13 @@
-import {generateSitemap, generateDirectTvSitemap} from "./src/utils";
+import {generatePageInfoSitemap} from "./src/utils/pageInfoConverter";
+import {generateMovieSitemap,generateTVSitemap,generateSportSitemap} from "./src/utils/DTVConverter";
 
+generatePageInfoSitemap();
 
-generateSitemap();
+generateMovieSitemap();
 
-generateDirectTvSitemap();
+generateTVSitemap();
 
-
-generateDirectTvSitemap();
-
-
+generateSportSitemap();
 
 
 
